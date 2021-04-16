@@ -170,7 +170,7 @@ if (typeof Array.prototype.indexOf != "function") {
        dirTitle = templateBoxes[1].val.replace(/[^A-Z0-9]/ig, "_");
        dirNo = templateBoxes[0].val.replace(/[^A-Z0-9]/ig, "_");
        //alert(dirNo);
-       writeDataAndLinks(fileArr,pageRow,myFile);
+       writeData(fileArr,pageRow,myFile);
        projIndex.push(pageRow);
        }
    
@@ -188,7 +188,7 @@ if (typeof Array.prototype.indexOf != "function") {
 
 }
 
-function writeDataAndLinks(fileArr,pR,myFile){
+function writeData(fileArr,pR,myFile){
         //alert(pR);
         myPageText = fileArr.toString() +"\," + pR.toString() + "\n";        
         //alert("adding to export: "+ pR);
